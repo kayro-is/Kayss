@@ -16,6 +16,179 @@ const Home = () => {
           <CatCard key={card.id} card={card} />
         ))}
             </Slide>
+
+            <div className="features">
+                <div className="container">
+                    <div className='item'>
+                <h1>Accédez à un monde de talents en un instant.</h1>
+                <div className="title">
+                    <img src="./img/check.png" alt="" />
+                    La meilleure qualité, quel que soit votre budget.
+                </div>
+                <p>
+                Découvrez des services premium à tous les niveaux de prix. Pas de tarifs horaires, uniquement des prix par projet.
+                </p>
+                <div className="title">
+                    <img src="./img/check.png" alt="" />
+                    La meilleure qualité, quel que soit votre budget.
+                </div>
+                <p>
+                Découvrez des services premium à tous les niveaux de prix. Pas de tarifs horaires, uniquement des prix par projet.
+                </p>
+                <div className="title">
+                    <img src="./img/check.png" alt="" />
+                    La meilleure qualité, quel que soit votre budget.
+                </div>
+                <p>
+                Découvrez des services premium à tous les niveaux de prix. Pas de tarifs horaires, uniquement des prix par projet.
+                </p>
+                <div className="title">
+                    <img src="./img/check.png" alt="" />
+                    La meilleure qualité, quel que soit votre budget.
+                </div>
+                <p>
+                Découvrez des services premium à tous les niveaux de prix. Pas de tarifs horaires, uniquement des prix par projet.
+                </p>
+                <div className="title">
+                    <img src="./img/check.png" alt="" />
+                    La meilleure qualité, quel que soit votre budget.
+                </div>
+                <p>
+                Découvrez des services premium à tous les niveaux de prix. Pas de tarifs horaires, uniquement des prix par projet.
+                </p>
+            </div>
+            <div className="item">
+                <video src="https://videos.pexels.com/video-files/3205401/3205401-hd_1920_1080_25fps.mp4" controls></video>
+
+            </div>
+        </div>
+
+        </div>
+
+        <div className="explore">
+        <div className="container">
+          <h1>Découvrez notre marketplace</h1>
+          <div className="items">
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Graphics & Design</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg"
+                alt=""
+              />
+              <div className="line"></div>
+
+              <span>Digital Marketing</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Writing & Translation</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/video-animation.f0d9d71.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Video & Animation</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/music-audio.320af20.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Music & Audio</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/programming.9362366.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Programming & Tech</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/business.bbdf319.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Business</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lifestyle.745b575.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Lifestyle</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/data.718910f.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Data</span>
+            </div>
+            <div className="item">
+              <img
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/photography.01cf943.svg"
+                alt=""
+              />
+              <div className="line"></div>
+              <span>Photography</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="features dark">
+        <div className="container">
+          <div className="item">
+            <h1>
+              Kayss <i>business</i>
+            </h1>
+            <h1>
+            Une solution d&apos;affaires conçue pour les  <i>équipes</i>
+            </h1>
+            <p>
+            Passez à une expérience personnalisée, riche en outils et avantages, spécialement pensée pour les entreprises.
+            </p>
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              Connectez-vous avec des freelances disposant d&apos;une solide expérience professionnelle.
+            </div>
+
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              Soyez mis en relation avec le talent idéal grâce à un responsable du succès client
+            </div>
+
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              Optimisez la gestion de vos équipes et boostez la productivité avec un espace de travail tout-en-un.
+            </div>
+            <button>Explorez Kayss Business</button>
+          </div>
+          <div className="item">
+            <img
+              src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_2.0/v1/attachments/generic_asset/asset/d9c17ceebda44764b591a8074a898e63-1599597624768/business-desktop-870-x2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
         </div>
     )
 }
