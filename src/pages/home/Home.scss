@@ -1,6 +1,6 @@
 .home {
     .features {
-      background-color: #f1fdf7;
+      background-color: #D6E8EE;
       display: flex;
       justify-content: center;
       padding: 100px 0px;
@@ -28,7 +28,7 @@
         }
   
         button {
-          background-color: #1dbf73;
+          background-color: #018ABE;
           border: none;
           color: white;
           padding: 10px 20px;
@@ -85,6 +85,7 @@
   
           video{
             width: 720px;
+            border-radius: 5px;
           }
         }
       }
@@ -146,7 +147,7 @@
             &:hover{
               .line{
                 width: 80px;
-                background-color: #1dbf73;
+                background-color: #018ABE;
               }
             }
           }
