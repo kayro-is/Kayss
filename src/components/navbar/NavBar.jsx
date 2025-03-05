@@ -2,12 +2,14 @@ import React from 'react';
 import './NavBar.scss';
 import { useState } from 'react';
 import { useEffect } from 'react';
-//import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
 
     const [active, setActive] = useState(false);
     const [ open, setOpen ] = useState(false);
+
+    const {pathname} = useLocation();
 
     const isActive = () => {
         window.scrollY > 0 ? setActive(true) : setActive(false);
@@ -25,13 +27,13 @@ const NavBar = () => {
         isSeller:true,
     }
     return (
-        <div className={active ? 'navbar active' : 'navbar'}>
+        <div className={active || pathname !=="/" ? 'navbar active' : 'navbar'}>
         
         <div className='container'>
             <div className="logo">
-                {/*<Link to='/'>*/ }
+                <Link to='/' className='link'>
                 <span className='text'>Kayss</span>
-                {/*</Link>*/ }
+                </Link>
                
                 <span className='dot'>.</span>
             </div>
@@ -50,28 +52,35 @@ const NavBar = () => {
                         {
                             currentUser.isSeller && (
                                 <>
-                                <span>Offre</span>
-                                <span>Ajouter une offre</span>
+                                <Link className='link' to="/mesOffres">Mes Offres</Link>
+                                <Link className='link' to="/add">Ajouter une offre</Link>
                                 </>
                             )}
-                        <span>Commandes</span>
-                        <span>Messages</span>
-                        <span>Déconnexion</span>
+                        <Link className='link' to="/commandes">Commandes</Link>
+                        <Link className='link' to="/messages">Messages</Link>
+                        <Link className='link'>Déconnexion</Link>
                     </div>
                     } 
                 </div>
             )}
            </div>
         </div>
+       {(active || pathname !== "/") &&(
 
-        <>
-        <hr /> 
-        <div className="menu">
-         <span>Test</span>
-         <span>Test</span>
-        </div>
-        </>
-
+                <>
+               <hr /> 
+                <div className="menu">
+                        <Link className='link' to="/">Grafique & Designe</Link>
+                        <Link className='link' to="">Video & animation</Link>
+                        <Link className='link'to="/">AI Services</Link>
+                        <Link className='link' to="/">Digital Marketing</Link>
+                        <Link className='link' to="/">Programation & Tech</Link>
+                        <Link className='link' to="/">Business</Link>
+                        <Link className='link' to="/">Lifestyle</Link>
+                        
+               </div>
+                 </>
+             )}
         </div>
     );
 }
