@@ -1,17 +1,16 @@
-import React from 'react';
-import './CardCard.scss';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./CardCard.scss";
 
-const catCard = ({card}) => {
+function CatCard({ card }) {
   return (
-    <Link to="offres?cat=design">
-    <div className='catCard'>
-      <img src={card.img} alt="" />
-      <span className="desc">{card.desc}</span>
-      <span className="title">{card.title}</span>
-        </div>
+    <Link to="/gigs?cat=design">
+      <div className="catCard">
+        <img src={card.img} alt="" />
+        <span className="desc">{card.desc}</span>
+        <span className="title">{card.title}</span>
+      </div>
     </Link>
   );
 }
-
-export default catCard ;
+export default CatCard;

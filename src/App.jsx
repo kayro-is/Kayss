@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Home from './pages/home/Home'
 import NavBar from './components/navbar/NavBar'
 import Footer from './components/footer/Footer'
-import Offres from './pages/offres/Offres'
-import Offre from './pages/offre/Offre'
+import Gigs from './pages/gigs/Gigs'
+import Gig from './pages/gig/gig'
 import Commandes from './pages/commandes/Commandes'
 import MesOffres from './pages/mesOffres/MesOffres'
 import Add from './pages/add/Add'
@@ -38,12 +38,12 @@ function App() {
         element: <Home />
       },
       {
-        path: '/offres',
-        element: <Offres />
+        path: '/Gigs',
+        element: <Gigs />
       },
       {
-        path: '/offre/:id',
-        element: <Offre />
+        path: '/gig/:id',
+        element: <Gig />
       },
       {
         path: '/commandes',
