@@ -8,10 +8,10 @@ import Footer from './components/footer/Footer'
 import Gigs from './pages/gigs/Gigs'
 import Gig from './pages/gig/gig'
 import Commandes from './pages/commandes/Commandes'
-import MesOffres from './pages/mesOffres/MesOffres'
 import Add from './pages/add/Add'
 import Messages from './pages/messages/Messages'
 import Message from './pages/message/Message'
+import MyGigs from './pages/mesGigs/MyGigs'
 
 
 //import NavBar from './components/NavBar'
@@ -50,8 +50,8 @@ function App() {
         element: <Commandes />
       },
       {
-        path: '/mesOffres',
-        element: <MesOffres />
+        path: '/myGigs',
+        element: <MyGigs />
       },
       {
         path: '/add',

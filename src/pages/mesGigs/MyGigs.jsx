@@ -1,32 +1,24 @@
 import React from 'react';
-import './Commandes.scss';
+import './MyGigs.scss';
+import { Link } from 'react-router-dom';
 
-
-const Commandes = () => {
-
-  const currentUser = {
-    id: 1,
-    name: 'kayro',
-    isSeller: true,
-  }
-
-
+const MyGigs = () => {
     return (
-        <div className="commandes">
+        <div className="myGigs">
             <div className="container">
                 <div className="title">
-                    <h1>Commandes</h1>
-                    
-                    <button>Ajouter une nouvelle Commandes</button>
-                    
+                    <h1>Prestations</h1>
+                    <Link to="/add" >
+                    <button>Ajouter une nouvelle prestation</button>
+                    </Link>
                 </div>
                 <table>
                     <tr>
                         <th>Image</th>
                         <th>Titre</th>
                         <th>Prix</th>
-                        <th>{currentUser.isSeller ? "Acheteur" : "Seller"}</th>
-                        <th>Contact</th>
+                        <th>Commandes</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
                         <td>
@@ -36,7 +28,7 @@ const Commandes = () => {
                         <td>88</td>
                         <td>123</td>
                         <td>
-                            <img className='delete' src="/img/message.png" alt="" />
+                            <img className='delete' src="/img/delete.png" alt="" />
                         </td>
                     </tr>
                 </table>
@@ -45,8 +37,8 @@ const Commandes = () => {
                         <th>Image</th>
                         <th>Titre</th>
                         <th>Prix</th>
-                        <th>{currentUser.isSeller ? "Acheteur" : "Seller"}</th>
-                        <th>Contact</th>
+                        <th>Commandes</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
                         <td>
@@ -56,7 +48,7 @@ const Commandes = () => {
                         <td>88</td>
                         <td>123</td>
                         <td>
-                            <img className='delete' src="/img/message.png" alt="" />
+                            <img className='delete' src="/img/delete.png" alt="" />
                         </td>
                     </tr>
                 </table>
@@ -65,8 +57,8 @@ const Commandes = () => {
                         <th>Image</th>
                         <th>Titre</th>
                         <th>Prix</th>
-                        <th>{currentUser.isSeller ? "Acheteur" : "Seller"}</th>
-                        <th>Contact</th>
+                        <th>Commandes</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
                         <td>
@@ -76,7 +68,7 @@ const Commandes = () => {
                         <td>88</td>
                         <td>123</td>
                         <td>
-                            <img className='delete' src="/img/message.png" alt="" />
+                            <img className='delete' src="/img/delete.png" alt="" />
                         </td>
                     </tr>
                 </table>
@@ -85,8 +77,8 @@ const Commandes = () => {
                         <th>Image</th>
                         <th>Titre</th>
                         <th>Prix</th>
-                        <th>{currentUser.isSeller ? "Acheteur" : "Seller"}</th>
-                        <th>Contact</th>
+                        <th>Commandes</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
                         <td>
@@ -96,7 +88,7 @@ const Commandes = () => {
                         <td>88</td>
                         <td>123</td>
                         <td>
-                            <img className='delete' src="/img/message.png" alt="" />
+                            <img className='delete' src="/img/delete.png" alt="" />
                         </td>
                     </tr>
                 </table>
@@ -105,8 +97,8 @@ const Commandes = () => {
                         <th>Image</th>
                         <th>Titre</th>
                         <th>Prix</th>
-                        <th>{currentUser.isSeller ? "Acheteur" : "Seller"}</th>
-                        <th>Contact</th>
+                        <th>Commandes</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
                         <td>
@@ -116,7 +108,7 @@ const Commandes = () => {
                         <td>88</td>
                         <td>123</td>
                         <td>
-                            <img className='delete' src="/img/message.png" alt="" />
+                            <img className='delete' src="/img/delete.png" alt="" />
                         </td>
                     </tr>
                 </table>
@@ -125,8 +117,8 @@ const Commandes = () => {
                         <th>Image</th>
                         <th>Titre</th>
                         <th>Prix</th>
-                        <th>{currentUser.isSeller ? "Acheteur" : "Seller"}</th>
-                        <th>Contact</th>
+                        <th>Commandes</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
                         <td>
@@ -136,7 +128,7 @@ const Commandes = () => {
                         <td>88</td>
                         <td>123</td>
                         <td>
-                            <img className='delete' src="/img/message.png" alt="" />
+                            <img className='delete' src="/img/delete.png" alt="" />
                         </td>
                     </tr>
                 </table>
@@ -145,8 +137,8 @@ const Commandes = () => {
                         <th>Image</th>
                         <th>Titre</th>
                         <th>Prix</th>
-                        <th>{currentUser.isSeller ? "Acheteur" : "Seller"}</th>
-                        <th>Contact</th>
+                        <th>Commandes</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
                         <td>
@@ -156,7 +148,7 @@ const Commandes = () => {
                         <td>88</td>
                         <td>123</td>
                         <td>
-                            <img className='delete' src="/img/message.png" alt="" />
+                            <img className='delete' src="/img/delete.png" alt="" />
                         </td>
                     </tr>
                 </table>
@@ -165,4 +157,4 @@ const Commandes = () => {
     )
 }
 
-export default Commandes;
+export default MyGigs;
